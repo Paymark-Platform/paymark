@@ -25,7 +25,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "ig",
       "kebab-case"
     ],
     "eofline": true,
@@ -44,6 +44,7 @@
       true,
       140
     ],
+    "member-access": true,
     "member-ordering": [
       true,
       {
@@ -76,6 +77,7 @@
       true,
       "as-needed"
     ],
+    "object-literal-sort-keys": false,
     "quotemark": [
       true,
       "single"
@@ -94,6 +96,7 @@
         "named": "never"
       }
     },
+    "trailing-comma": false,
     "typedef-whitespace": {
       "options": [
         {
