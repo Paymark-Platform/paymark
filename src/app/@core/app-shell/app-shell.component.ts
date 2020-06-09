@@ -20,7 +20,6 @@ export class AppShellComponent implements OnInit {
 
   public themeConfigOpen = false;
 
-
   constructor(private tplSvc: AppShellService) { }
 
   public ngOnInit() {
