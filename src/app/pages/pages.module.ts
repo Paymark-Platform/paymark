@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppShellModule } from './../@core/app-shell/app-shell.module';
-import { SharedModule } from './shared/shared.module';
+import { TemplateModule } from './templates/template.module';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
@@ -14,7 +14,7 @@ import { PagesComponent } from './pages.component';
     AppShellModule,
     FormsModule,
     CommonModule,
-    SharedModule
+    TemplateModule
   ]
 })
 export class PagesModule { }

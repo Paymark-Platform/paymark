@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { AppShellComponent } from './app-shell.component';
 
+import { SIDEBAR_DIRECTIVES } from './../shared/directives/side-nav.directive';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -18,7 +19,8 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
     HeaderComponent,
     FooterComponent,
     SideNavComponent,
-    SidePanelComponent
+    SidePanelComponent,
+    SIDEBAR_DIRECTIVES
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,7 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
     FormsModule
   ],
   providers: [AppShellService],
-  exports: [AppShellComponent],
+  exports: [AppShellComponent, SIDEBAR_DIRECTIVES],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppShellModule { }
